@@ -167,7 +167,7 @@ button {
 }
 
 /* Your Projects section */
-.projects-section{
+.project-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.2fr 1fr 1fr 1fr;
@@ -175,22 +175,58 @@ button {
     gap: 20px;
 }
 
-.project-item{
-    border: solid black;
+.projects-section > h3 {
+    font-size: 1.3rem;
+    margin: 23px 0px 9px 0px;
+}
+
+.project-item {
     display: grid;
     grid-template-rows: 0.3fr 1fr 0.3fr;
     border-radius: 10px;
+    background-color: #ffffff;
+    border-left: 8px solid #f1b427;
+}
+
+.project-item > p {
+    margin: 0rem 1.5rem 0rem 1.5rem;
+    color: grey;
+
 }
 
 .project-item > h4{
     margin: 0;
+    font-size: 1.1rem;
+    margin: 1.5rem 1.5rem 0rem 1.5rem;
+}
+
+.imgs-box{
+    display: flex;
+    margin: 0rem 2rem 1rem 0rem;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.imgs-box > img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/* Announcement section */
+.announcement-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 0px 10px 30px 17px;
+}
+.announcement-section > h3{
+    margin: 23px 0px 9px 17px;
     font-size: 1.3rem;
 }
 
-.projects-section > h3 {
-    grid-column: 1 / -1;
-    font-size: 1.4rem;
-}
 
 /* Trending Section */
 .trending-section{
