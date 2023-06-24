@@ -162,6 +162,7 @@ button {
 .main-content{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     background-color: #e1e8f0;
     padding: 1rem 2rem 3rem 1.5rem;
 }
@@ -215,20 +216,49 @@ button {
 
 /* Announcement section */
 .announcement-grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
     border-radius: 10px;
     margin: 0px 10px 30px 17px;
+    padding: 2rem 2.5rem;
+    width: 25rem;
+    gap: 20px;
 }
-.announcement-section > h3{
+
+.announcement-border{
+    height: 1px;
+    background-color: lightgrey;
+}
+
+.announcement-section , .trending-section {
+    padding-left: 3rem;
+}
+
+.announcement-section > h3, .trending-section > h3 {
     margin: 23px 0px 9px 17px;
     font-size: 1.3rem;
 }
 
+.announcement-item > h4, .trending-item > h4 {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.announcement-item > p, .trending-item > p {
+    font-size: 0.9rem;
+    color: grey;
+    margin: 0;
+}
+
 
 /* Trending Section */
-.trending-section{
-    grid-column: 2 / 3;
+.trending-grid{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 0px 10px 30px 17px;
+    padding: 2rem 2.5rem;
+    width: 25rem;
 }
