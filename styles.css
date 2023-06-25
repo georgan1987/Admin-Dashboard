@@ -3,7 +3,7 @@
 
 body{
     display: grid;
-    grid-template-columns: 0.8fr 4fr;
+    grid-template-columns: 1fr 4fr;
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
@@ -112,7 +112,7 @@ body{
     width: 1.7rem;
 }
 
-.logo-top-right > img:nth-child(2) {
+.logo-top-right > img:nth-child(2), .trending-item > img {
     height: 3.7rem;
     width: 3.7rem;
 }
@@ -162,7 +162,7 @@ button {
 .main-content{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     background-color: #e1e8f0;
     padding: 1rem 2rem 3rem 1.5rem;
 }
@@ -171,7 +171,7 @@ button {
 .project-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-row: 1 / 3;
     gap: 20px;
 }
@@ -187,6 +187,8 @@ button {
     border-radius: 10px;
     background-color: #ffffff;
     border-left: 8px solid #f1b427;
+    width: 30rem;
+    height: 15rem;
 }
 
 .project-item > p {
@@ -240,12 +242,12 @@ button {
     font-size: 1.3rem;
 }
 
-.announcement-item > h4, .trending-item > h4 {
+.announcement-item > h4 {
     font-size: 0.9rem;
     margin: 0;
 }
 
-.announcement-item > p, .trending-item > p {
+.announcement-item > p{
     font-size: 0.9rem;
     color: grey;
     margin: 0;
@@ -261,4 +263,25 @@ button {
     margin: 0px 10px 30px 17px;
     padding: 2rem 2.5rem;
     width: 25rem;
+}
+
+.trending-item{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.trending-item > p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.span-tag{
+    font-size: 1rem;
+}
+
+.span-text{
+    color: grey;
+    font-size: 1rem;
 }
