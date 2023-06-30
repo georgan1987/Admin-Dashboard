@@ -15,8 +15,8 @@ body{
     background-color: #1892d3;
     color: #ffffff;
     display: grid;
-    grid-template-rows: 6rem 21rem 20rem;
-}
+    grid-template-rows: 6rem 24rem 20rem;
+    }
 
 .dashboard-logo img {
     height: 3rem;
@@ -36,7 +36,7 @@ body{
 .menu ul, .settings-menu ul {
     list-style-type: none;
     padding: 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
@@ -46,11 +46,29 @@ body{
     align-items: center;
     gap: 1.5rem;
     margin-bottom: 1.2rem;
+    text-shadow: 0 0 5px black;
+}
+
+.menu ul li span:hover, .menu ul li img:hover ~ span,
+.settings-menu ul li span:hover, .settings-menu ul li img:hover ~ span{
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+
+.menu ul li span:active, .menu ul li img:active ~ span,
+.settings-menu ul li span:active, .settings-menu ul li img:active ~ span,
+.bell-icon:active, .imgs-box img:active{
+transform: scale(0.98);
+}
+
+.bell-icon:hover, .imgs-box img:hover{
+    cursor: pointer;
 }
 
 .menu img, .settings-menu img {
-    height: 1.8rem;
-    width: 1.8rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    cursor: pointer;
 }
 
 .menu, .settings-menu {
@@ -88,7 +106,7 @@ body{
 }
 
 .search-container > input {
-    width: 35rem;
+    width: 45rem;
     border-radius: 15px;
     border-style: none;
     background-color: #e1e8f0;
@@ -127,10 +145,13 @@ body{
 
 .hi-section{
     display: grid;
-    grid-template-columns: 0.3fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
     align-items: center;
 }
 
+.hi-text{
+    font-size: 1.05rem;
+}
 .hi-section > img {
     width: 5rem;
     height: 5rem;
@@ -138,7 +159,7 @@ body{
 }
 
 .name-text{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 /* Buttons */
@@ -147,7 +168,7 @@ button {
     color: white;
     border-style: none;
     width: 6rem;
-    height: 2rem;
+    height: 2.8rem;
     border-radius: 22px;
     font-size: 1rem;
 }
@@ -156,6 +177,14 @@ button {
     display: flex;
     width: 25rem;
     justify-content: space-around;
+}
+
+.header-buttons button:hover{
+    cursor: pointer;
+}
+
+.header-buttons button:active{
+    transform: scale(0.98);
 }
 
 /* Main Content */
@@ -191,6 +220,11 @@ button {
     height: 15rem;
 }
 
+.project-item:hover{
+    transition: 0.5s;
+    transform: scale(1.01);
+}
+
 .project-item > p {
     margin: 0rem 1.5rem 0rem 1.5rem;
     color: grey;
@@ -212,8 +246,8 @@ button {
 }
 
 .imgs-box > img{
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1.8rem;
+    width: 1.8rem;
 }
 
 /* Announcement section */
